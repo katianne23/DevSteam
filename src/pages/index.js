@@ -98,24 +98,32 @@ export default function Home() {
               title='Counter Strike: Global Offensive'
               category='Ação, Estratégia, Multijogador'
               price='99,90'
+              onAdd={() => 
+                handleAddProduct ({ name: 'Counter Strike: Global Offensive', price: 99.90, image: 'counter-strike.jpg'})}
             />
             <GameCard
               image={'fortnite.jpg'}
               title='Fortnite'
               category='Ação, Estratégia, Multijogador'
               price='199,90'
+              onAdd={() => 
+                handleAddProduct ({ name: 'Fortnite', price: 199.90, image: 'fortnite.jpg'})}
             />
             <GameCard
               image={'minecraft.jpeg'}
-              title='Counter Strike: Global Offensive'
+              title='Minecraft'
               category='Criatividade, Estratégia, Multijogador'
               price='89,90'
+              onAdd={() => 
+                handleAddProduct ({ name: 'Minecraft', price: 89.90, image: 'minecraft.jpeg'})}
             />
             <GameCard
               image={'roblox.jpg'}
               title='Roblox'
               category='Multiverso, Multijogador'
               price='109,90'
+              onAdd={() => 
+                handleAddProduct ({ name: 'Roblox', price: 109.90, image: 'roblox.jpg'})}
             />
 
           </div>

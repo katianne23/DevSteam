@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./SaleCard.module.css";
 import Button from "@/components/forms/button/Button";
 
-const SaleCard = ({ image, discount, fullPrice, discountPrice }) => {
+const SaleCard = ({ image, discount, fullPrice, discountPrice, onAdd }) => {
   return (
       <div className={styles.salecard}>
         <Image src={`/products/${image}`} alt={image} width={250} height={300}  />
@@ -16,7 +16,7 @@ const SaleCard = ({ image, discount, fullPrice, discountPrice }) => {
                     <h4 className={styles.discountprice}>{discountPrice}</h4>
                 </div>
             </div>
-            <Button fullWidth>Adicionar ao carrinho</Button>
+            <Button onClick={onAdd} fullWidth>Adicionar ao carrinho</Button>
         </div>
       </div>
 

@@ -7,6 +7,7 @@ import Subtitle from '@/components/tipography/subtitle/Subtitle';
 import Container from '@/components/container/Container';
 import SaleCard from '@/components/cards/saleCard/SaleCard';
 import GameCard from '@/components/cards/gameCard/GameCard';
+import Footer from "@/components/footer/Footer";
 
 
 export default function Home() {
@@ -128,6 +129,7 @@ export default function Home() {
 
           </div>
         </Container>
+        <Footer />
 
       </div>
     </>

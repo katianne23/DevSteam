@@ -1,7 +1,11 @@
 import CartOption from "../cartOption/CartOption";
 import style from "./Cart.module.css";
+import Button from "../forms/button/Button";
 
 const CartMenu = ( { cart, onRemove } ) => {
+  const handleSubmit =  () => {
+    alert("Comprar Realizada com Sucesso!!")
+  }
   return (
     <div className={style.menu}>
       <div className={style.option}>
@@ -25,6 +29,9 @@ const CartMenu = ( { cart, onRemove } ) => {
         <h2 className={style.price}>R$ {
           cart.reduce((prev, current) => prev + current.price, 0).toFixed(2)}
         </h2>
+      </div>
+      <div className={style.button}>
+      <Button onClick={handleSubmit}>Finalizar Comprar</Button>
       </div>
     </div>
   );

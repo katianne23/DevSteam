@@ -26,6 +26,11 @@
     color: #BEEB14;
 }
 
+.button {
+    margin-top: 12px;
+    text-align: center;
+}
+
 @media (max-width: 500) {
     .menu {
         width: 300px;
